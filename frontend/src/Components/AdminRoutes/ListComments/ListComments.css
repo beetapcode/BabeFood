@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+.list-comment-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #F9FAFB;
+  font-family: "Inter", sans-serif;
+}
+.list-comment-wrapper .page-content {
+  margin-left: 29rem;
+  width: calc(100% - 29rem);
+  padding-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+.list-comment-wrapper .page-content .page-header {
+  height: 70px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #E5E7EB;
+  display: flex;
+  align-items: center;
+  padding-left: 3rem;
+  margin-bottom: 3rem;
+}
+.list-comment-wrapper .page-content .page-header .page-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+.list-comment-wrapper .page-content .table-card {
+  margin-left: 20px;
+  margin-right: 10px;
+  background: #FFFFFF;
+  border-radius: 1.2rem;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid #E5E7EB;
+  padding: 1rem;
+  overflow-x: auto;
+}
+.list-comment-wrapper .page-content .table-card .custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 100rem;
+}
+.list-comment-wrapper .page-content .table-card .custom-table thead {
+  background-color: #F9FAFB;
+}
+.list-comment-wrapper .page-content .table-card .custom-table thead tr th {
+  text-align: center;
+  padding: 1.6rem 2.4rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #6B7280;
+  border-bottom: 0.1rem solid #E5E7EB;
+  white-space: nowrap;
+}
+.list-comment-wrapper .page-content .table-card .custom-table tbody tr {
+  border-bottom: 0.1rem solid #F9FAFB;
+  transition: background 0.2s;
+}
+.list-comment-wrapper .page-content .table-card .custom-table tbody tr:hover {
+  background-color: #FDF2F8;
+}
+.list-comment-wrapper .page-content .table-card .custom-table tbody tr td {
+  padding: 1.6rem 2.4rem;
+  vertical-align: middle;
+  font-size: 1.8rem;
+  color: #374151;
+}
+.list-comment-wrapper .page-content .table-card .custom-table tbody tr td.text-grey {
+  color: #6B7280;
+  font-family: monospace;
+}
+.list-comment-wrapper .page-content .table-card .custom-table tbody tr td .user-cell {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+.list-comment-wrapper .page-content .table-card .custom-table tbody tr td .user-cell .name {
+  font-weight: 600;
+  color: #111827;
+  font-size: 2rem;
+}
+.list-comment-wrapper .page-content .table-card .custom-table tbody tr td .user-cell .sub-text {
+  font-size: 1.5rem;
+  color: #6B7280;
+  margin-top: 0.2rem;
+}
+.list-comment-wrapper .page-content .table-card .custom-table tbody tr td .comment-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+.list-comment-wrapper .page-content .table-card .custom-table tbody tr td .comment-content .star {
+  color: #F59E0B;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 4px;
+}
+.list-comment-wrapper .page-content .table-card .custom-table tbody tr td .comment-content span {
+  font-size: 2rem;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.list-comment-wrapper .page-content .table-card .custom-table tbody tr td .badge-replied {
+  display: inline-block;
+  background-color: #DEF7EC;
+  color: #03543F;
+  padding: 0.4rem 1rem;
+  border-radius: 9.9rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.list-comment-wrapper .page-content .table-card .custom-table tbody tr td .badge-pending {
+  display: inline-block;
+  background-color: #FEF3C7;
+  color: #92400E;
+  padding: 0.4rem 1rem;
+  border-radius: 9.9rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.list-comment-wrapper .page-content .table-card .custom-table tbody tr td .action-buttons {
+  margin-left: 70px;
+  display: flex;
+  gap: 1.4rem;
+}
+.list-comment-wrapper .page-content .table-card .custom-table tbody tr td .action-buttons .btn-icon {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 1rem 1rem;
+  border-radius: 0.6rem;
+}
+.list-comment-wrapper .page-content .table-card .custom-table tbody tr td .action-buttons .btn-icon svg {
+  width: 2rem;
+  height: 2rem;
+}
+.list-comment-wrapper .page-content .table-card .custom-table tbody tr td .action-buttons .btn-icon.edit {
+  color: #3B82F6;
+}
+.list-comment-wrapper .page-content .table-card .custom-table tbody tr td .action-buttons .btn-icon.edit:hover {
+  background: #EFF6FF;
+}
+.list-comment-wrapper .page-content .table-card .custom-table tbody tr td .action-buttons .btn-icon.delete {
+  color: #EF4444;
+}
+.list-comment-wrapper .page-content .table-card .custom-table tbody tr td .action-buttons .btn-icon.delete:hover {
+  background: #FEF2F2;
+}
+.list-comment-wrapper .page-content .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-backdrop-filter: blur(0.2rem);
+          backdrop-filter: blur(0.2rem);
+}
+.list-comment-wrapper .page-content .modal-overlay .modal-box {
+  background: #FFFFFF;
+  width: 80rem;
+  max-width: 95%;
+  border-radius: 1.6rem;
+  box-shadow: 0 2rem 2.5rem -0.5rem rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  animation: slideUp 0.3s ease-out;
+}
+.list-comment-wrapper .page-content .modal-overlay .modal-box .modal-header {
+  padding: 2rem 2.4rem;
+  border-bottom: 0.1rem solid #E5E7EB;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.list-comment-wrapper .page-content .modal-overlay .modal-box .modal-header h3 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #111827;
+}
+.list-comment-wrapper .page-content .modal-overlay .modal-box .modal-header .icon-close {
+  width: 2.4rem;
+  cursor: pointer;
+  color: #6B7280;
+}
+.list-comment-wrapper .page-content .modal-overlay .modal-box .modal-header .icon-close:hover {
+  color: #EF4444;
+}
+.list-comment-wrapper .page-content .modal-overlay .modal-box .modal-body {
+  padding: 2.4rem;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+.list-comment-wrapper .page-content .modal-overlay .modal-box .modal-body .info-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.list-comment-wrapper .page-content .modal-overlay .modal-box .modal-body .info-grid .span-2 {
+  grid-column: span 2;
+}
+.list-comment-wrapper .page-content .modal-overlay .modal-box .modal-body .info-grid .info-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.list-comment-wrapper .page-content .modal-overlay .modal-box .modal-body .info-grid .info-group label {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #6B7280;
+}
+.list-comment-wrapper .page-content .modal-overlay .modal-box .modal-body .info-grid .info-group input, .list-comment-wrapper .page-content .modal-overlay .modal-box .modal-body .info-grid .info-group textarea, .list-comment-wrapper .page-content .modal-overlay .modal-box .modal-body .info-grid .info-group select {
+  padding: 1rem 1.2rem;
+  border: 0.1rem solid #E5E7EB;
+  border-radius: 0.8rem;
+  background: #F9FAFB;
+  width: 100%;
+  outline: none;
+  font-size: 1.5rem;
+}
+.list-comment-wrapper .page-content .modal-overlay .modal-box .modal-body .info-grid .info-group input:focus, .list-comment-wrapper .page-content .modal-overlay .modal-box .modal-body .info-grid .info-group textarea:focus, .list-comment-wrapper .page-content .modal-overlay .modal-box .modal-body .info-grid .info-group select:focus {
+  border-color: #EC4899;
+}
+.list-comment-wrapper .page-content .modal-overlay .modal-box .modal-body .info-grid .info-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+.list-comment-wrapper .page-content .modal-overlay .modal-box .modal-body .info-grid .info-group .user-review {
+  background-color: #FFFBEB;
+  border: 1px solid #FCD34D;
+  padding: 12px;
+  border-radius: 8px;
+}
+.list-comment-wrapper .page-content .modal-overlay .modal-box .modal-body .info-grid .info-group .user-review .rating {
+  display: block;
+  color: #D97706;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.list-comment-wrapper .page-content .modal-overlay .modal-box .modal-body .info-grid .info-group .user-review p {
+  margin: 0;
+  font-size: 14px;
+  color: #4B5563;
+  line-height: 1.5;
+  font-style: italic;
+}
+.list-comment-wrapper .page-content .modal-overlay .modal-box .modal-body .reply-section label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 8px;
+}
+.list-comment-wrapper .page-content .modal-overlay .modal-box .modal-body .reply-section textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px;
+  border: 1px solid #E5E7EB;
+  border-radius: 8px;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  outline: none;
+  resize: vertical;
+  transition: border 0.2s;
+}
+.list-comment-wrapper .page-content .modal-overlay .modal-box .modal-body .reply-section textarea:focus {
+  border-color: #EC4899;
+  box-shadow: 0 0 0 3px rgba(236, 72, 153, 0.1);
+}
+.list-comment-wrapper .page-content .modal-overlay .modal-box .modal-footer {
+  padding: 1.6rem 2.4rem;
+  border-top: 0.1rem solid #E5E7EB;
+  background: #F9FAFB;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.2rem;
+}
+.list-comment-wrapper .page-content .modal-overlay .modal-box .modal-footer button {
+  padding: 1rem 2rem;
+  border-radius: 0.8rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.list-comment-wrapper .page-content .modal-overlay .modal-box .modal-footer .btn-cancel {
+  background: #FFFFFF;
+  border: 0.1rem solid #E5E7EB;
+  color: #374151;
+}
+.list-comment-wrapper .page-content .modal-overlay .modal-box .modal-footer .btn-cancel:hover {
+  background: #F3F4F6;
+}
+.list-comment-wrapper .page-content .modal-overlay .modal-box .modal-footer .btn-save {
+  background: #EC4899;
+  color: white;
+}
+.list-comment-wrapper .page-content .modal-overlay .modal-box .modal-footer .btn-save:hover {
+  background: #DB2777;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=ListComments.css.map */

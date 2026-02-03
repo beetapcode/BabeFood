@@ -1,0 +1,468 @@
+.payment-container {
+  width: 100%;
+}
+.payment-container .payment-show-sidebar {
+  display: none;
+}
+.payment-container .payment-wrapper {
+  width: 100%;
+  min-height: 44vh;
+  margin: 1rem 0;
+  padding: 9rem 20rem 2rem;
+}
+.payment-container .payment-wrapper .adress {
+  width: 100%;
+  margin: 1rem 0;
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+.payment-container .payment-wrapper .adress .title {
+  font-size: 1.7rem;
+  display: flex;
+  padding: 2rem 2rem 0;
+  font-weight: 600;
+}
+.payment-container .payment-wrapper .adress .title svg {
+  color: var(--text-green);
+  font-size: 1.9rem;
+  padding-right: 1rem;
+}
+.payment-container .payment-wrapper .adress .info {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem 2rem;
+}
+.payment-container .payment-wrapper .adress .info h3 {
+  font-size: 1.5rem;
+}
+.payment-container .payment-wrapper .adress .info p {
+  font-size: 1.5rem;
+  padding: 0 2rem;
+  color: var(--text-black-08);
+}
+.payment-container .payment-wrapper .adress .info span {
+  display: block;
+  font-size: 1.3rem;
+  color: var(--text-green);
+  border: 0.1rem solid var(--text-green);
+  padding: 0.3rem 0.6rem;
+}
+.payment-container .payment-wrapper .adress .info a {
+  font-size: 1.5rem;
+  padding-left: 1rem;
+}
+.payment-container .payment-wrapper .adress .info-mobile {
+  display: none;
+}
+.payment-container .payment-wrapper .product {
+  width: 100%;
+  margin: 1rem 0;
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+.payment-container .payment-wrapper .product .title {
+  padding: 2rem 2rem 0;
+}
+.payment-container .payment-wrapper .product .title p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: left;
+}
+.payment-container .payment-wrapper .product .wrapper {
+  width: 100%;
+}
+.payment-container .payment-wrapper .product .wrapper .item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+.payment-container .payment-wrapper .product .wrapper .item .col-10 {
+  width: 10%;
+  font-size: 1.5rem;
+}
+.payment-container .payment-wrapper .product .wrapper .item .col-10 span {
+  font-size: 1.5rem;
+}
+.payment-container .payment-wrapper .product .wrapper .item .col-20 {
+  width: 20%;
+  font-size: 1.5rem;
+}
+.payment-container .payment-wrapper .product .wrapper .item .col-20 span {
+  font-size: 1.5rem;
+}
+.payment-container .payment-wrapper .product .wrapper .item .col-60 {
+  width: 60%;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.payment-container .payment-wrapper .product .wrapper .item .col-60 input {
+  margin-left: 1rem;
+}
+.payment-container .payment-wrapper .product .wrapper .item .col-60 .avatar {
+  width: 16%;
+  padding: 1rem;
+}
+.payment-container .payment-wrapper .product .wrapper .item .col-60 .avatar img {
+  width: 90%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.payment-container .payment-wrapper .product .wrapper .item .col-60 p {
+  width: 84%;
+  text-align: left;
+  font-size: 1.5rem;
+}
+.payment-container .payment-wrapper .product .wrapper .total {
+  width: 100%;
+  height: 6rem;
+  border-top: 0.1rem solid var(--border-line);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 1.7rem;
+}
+.payment-container .payment-wrapper .product .wrapper .total p {
+  min-width: 18rem;
+  max-width: 20rem;
+  padding-right: 6rem;
+  font-size: 1.7rem;
+  color: var(--text-green);
+}
+.payment-container .payment-wrapper .product .wrapper-mobile {
+  display: none;
+}
+.payment-container .payment-wrapper .payment {
+  width: 100%;
+  margin: 1rem 0;
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+.payment-container .payment-wrapper .payment .title {
+  padding: 2rem 2rem 0;
+}
+.payment-container .payment-wrapper .payment .title p {
+  font-size: 1.7rem;
+  font-weight: 600;
+  text-align: left;
+}
+.payment-container .payment-wrapper .payment .title .options {
+  text-align: left;
+  width: 100%;
+  padding: 1rem 0;
+}
+.payment-container .payment-wrapper .payment .title .options .item {
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+.payment-container .payment-wrapper .payment .title .options .item input {
+  margin-right: 1rem;
+  width: 2rem;
+  height: 2rem;
+  cursor: pointer;
+}
+.payment-container .payment-wrapper .payment .title .options .form-payment {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.payment-container .payment-wrapper .payment .title .options .form-payment span {
+  font-size: 1.5rem;
+  padding-left: 2rem;
+  color: var(--btn-color);
+}
+.payment-container .payment-wrapper .payment .title .options .form-payment .form-payment-des {
+  width: 100%;
+  display: flex;
+  padding: 0.8rem 4rem;
+}
+.payment-container .payment-wrapper .payment .title .options .form-payment .form-payment-des h3 {
+  width: 20rem;
+  font-size: 1.9rem;
+  text-align: left;
+}
+.payment-container .payment-wrapper .payment .title .options .form-payment .form-payment-des p {
+  flex: 1;
+  font-size: 1.9rem;
+  text-align: left;
+}
+.payment-container .payment-wrapper .payment .title .options .form-payment .form-payment-des p span {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.payment-container .payment-wrapper .payment .title .options .form-payment .form-payment-code {
+  width: 100%;
+  margin: 2rem 0 2rem 0;
+  display: flex;
+  align-items: center;
+}
+.payment-container .payment-wrapper .payment .title .options .form-payment .form-payment-code span {
+  font-size: 1.5rem;
+}
+.payment-container .payment-wrapper .payment .title .options .form-payment .form-payment-code input {
+  width: 30rem;
+  height: 4.4rem;
+  border-radius: 1rem;
+  margin-left: 1rem;
+  outline: none;
+  border: 0.1rem solid var(--border-line);
+  font-size: 1.5rem;
+  padding: 0 1rem;
+}
+.payment-container .payment-wrapper .payment .title .options .form-payment .form-payment-title {
+  font-size: 1.6rem;
+}
+.payment-container .payment-wrapper .payment .title .options .form-payment .form-payment-wrapper {
+  width: 100%;
+}
+.payment-container .payment-wrapper .payment .title .options .form-payment .form-payment-wrapper .form-payment-wrapper-img img {
+  width: 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.payment-container .payment-wrapper .payment .title .options .form-payment .form-payment-wrapper .form-payment-info {
+  width: 100%;
+  margin-top: 1rem;
+}
+.payment-container .payment-wrapper .payment .title .options .form-payment .form-payment-wrapper .form-payment-info .form-payment-info-desc {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: red;
+}
+.payment-container .payment-wrapper .payment .title .options .form-payment .form-payment-wrapper .form-payment-info .form-payment-info-item {
+  font-size: 1.6rem;
+}
+.payment-container .payment-wrapper .payment .title .confirm {
+  display: flex;
+  justify-content: flex-end;
+  border-top: 0.1rem solid var(--border-line);
+}
+.payment-container .payment-wrapper .payment .title .confirm .confirm-description {
+  width: 28rem;
+  padding: 2rem 0 1rem;
+}
+.payment-container .payment-wrapper .payment .title .confirm .confirm-description .confirm-item {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.payment-container .payment-wrapper .payment .title .confirm .confirm-description .confirm-item p {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.payment-container .payment-wrapper .payment .title .confirm .confirm-description .confirm-item span {
+  display: flex;
+  font-size: 1.5rem;
+}
+.payment-container .payment-wrapper .payment .title .confirm .confirm-description .confirm-item:nth-child(3) {
+  border-top: 0.1rem solid var(--border-line);
+}
+.payment-container .payment-wrapper .payment .title .confirm .confirm-description .cofirm-btn {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 2rem 1rem;
+}
+.payment-container .payment-wrapper .payment .title .confirm .confirm-description .cofirm-btn button {
+  font-size: 1.8rem;
+  font-weight: 600;
+  border: none;
+  outline: none;
+  background: var(--background-color);
+  color: var(--text-white-color);
+  padding: 1rem 3rem;
+  border-radius: 1rem;
+}
+.payment-container .payment-wrapper .payment .title .confirm .confirm-description .cofirm-btn button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1280px) {
+  .payment-container .payment-wrapper {
+    padding: 9rem 10rem 2rem !important;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .payment-container .payment-wrapper {
+    padding: 9rem 4rem 2rem !important;
+  }
+}
+@media screen and (max-width: 769px) {
+  .payment-container .payment-show-sidebar {
+    display: flex;
+  }
+  .payment-container .payment-wrapper {
+    padding: 5rem 2rem 2rem !important;
+  }
+  .payment-container .payment-wrapper .adress .title {
+    font-size: 1.6rem !important;
+  }
+  .payment-container .payment-wrapper .adress .title svg {
+    font-size: 1.8rem !important;
+  }
+  .payment-container .payment-wrapper .adress .info h3,
+  .payment-container .payment-wrapper .adress .info p,
+  .payment-container .payment-wrapper .adress .info a {
+    font-size: 1.3rem !important;
+  }
+  .payment-container .payment-wrapper .adress .info span {
+    font-size: 1.2rem !important;
+  }
+  .payment-container .payment-wrapper .product .title p {
+    font-size: 1.6rem !important;
+  }
+  .payment-container .payment-wrapper .product .wrapper .item h3 {
+    font-size: 1.4rem !important;
+  }
+  .payment-container .payment-wrapper .product .wrapper .item .col-60 {
+    width: 50% !important;
+  }
+  .payment-container .payment-wrapper .product .wrapper .item .col-60 .avatar {
+    width: 20% !important;
+    padding: 0.5rem !important;
+  }
+  .payment-container .payment-wrapper .product .wrapper .item .col-60 p {
+    font-size: 1.3rem !important;
+  }
+  .payment-container .payment-wrapper .product .wrapper .item .col-10 {
+    width: 15% !important;
+  }
+  .payment-container .payment-wrapper .product .wrapper .item .col-10 span,
+  .payment-container .payment-wrapper .product .wrapper .item .col-20 span {
+    font-size: 1.3rem !important;
+  }
+  .payment-container .payment-wrapper .product .wrapper .total {
+    font-size: 1.5rem !important;
+  }
+  .payment-container .payment-wrapper .product .wrapper .total p {
+    font-size: 1.5rem !important;
+    padding-right: 2rem !important;
+  }
+  .payment-container .payment-wrapper .payment .title p {
+    font-size: 1.6rem !important;
+  }
+  .payment-container .payment-wrapper .payment .options .item {
+    font-size: 1.3rem !important;
+  }
+  .payment-container .payment-wrapper .payment .options .item input {
+    width: 1.6rem !important;
+    height: 1.6rem !important;
+    margin-right: 0.6rem !important;
+  }
+  .payment-container .payment-wrapper .payment .form-payment-title {
+    font-size: 1.3rem !important;
+  }
+  .payment-container .payment-wrapper .payment .form-payment-wrapper .form-payment-info .form-payment-info-desc {
+    font-size: 1.4rem !important;
+  }
+  .payment-container .payment-wrapper .payment .form-payment-wrapper .form-payment-info .form-payment-info-item {
+    font-size: 1.3rem !important;
+  }
+  .payment-container .payment-wrapper .confirm .confirm-description {
+    width: 26rem !important;
+  }
+  .payment-container .payment-wrapper .confirm .confirm-description .confirm-item p,
+  .payment-container .payment-wrapper .confirm .confirm-description .confirm-item span {
+    font-size: 1.3rem !important;
+  }
+  .payment-container .payment-wrapper .confirm .confirm-description .cofirm-btn {
+    padding: 1rem !important;
+  }
+  .payment-container .payment-wrapper .confirm .confirm-description .cofirm-btn button {
+    font-size: 1.5rem !important;
+    padding: 0.8rem 1.6rem !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .payment-container .payment-wrapper {
+    padding: 5rem 1rem 2rem !important;
+  }
+  .payment-container .payment-wrapper .product .wrapper .total p {
+    min-width: 10rem !important;
+    max-width: 14rem !important;
+  }
+  .payment-container .payment-wrapper .adress .info {
+    padding: 1rem 1rem 2rem !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .payment-container .payment-wrapper .product .wrapper-desktop {
+    display: none !important;
+  }
+  .payment-container .payment-wrapper .product .wrapper-mobile {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .payment-container .payment-wrapper .product .wrapper-mobile .total {
+    height: 5rem !important;
+    font-size: 1.4rem !important;
+  }
+  .payment-container .payment-wrapper .product .wrapper-mobile .total p {
+    font-size: 1.4rem !important;
+    padding: 0 1rem !important;
+    min-width: 8rem !important;
+    max-width: 12rem !important;
+  }
+  .payment-container .payment-wrapper .product .wrapper-mobile .item .col-60 {
+    width: 100% !important;
+    padding: 0 1rem;
+  }
+  .payment-container .payment-wrapper .product .wrapper-mobile .item .col-60 input {
+    margin-left: 0 !important;
+  }
+  .payment-container .payment-wrapper .product .wrapper-mobile .item .col-60 .right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .payment-container .payment-wrapper .product .wrapper-mobile .item .col-60 .right p,
+  .payment-container .payment-wrapper .product .wrapper-mobile .item .col-60 .right span {
+    width: 100%;
+    font-size: 1.3rem !important;
+    margin: 0.1rem 0;
+  }
+  .payment-container .payment-wrapper .product .wrapper-mobile .item .col-60 .right span {
+    padding-left: 0.8rem;
+    color: red;
+  }
+  .payment-container .payment-wrapper .adress .title,
+  .payment-container .payment-wrapper .product .title,
+  .payment-container .payment-wrapper .payment .title {
+    padding: 1rem 1rem 0 1rem !important;
+  }
+  .payment-container .payment-wrapper .adress .info-desktop {
+    display: none !important;
+  }
+  .payment-container .payment-wrapper .adress .info-mobile {
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 1rem 1rem 0rem !important;
+  }
+  .payment-container .payment-wrapper .adress .info-mobile .info-mobile-row {
+    width: 100% !important;
+    display: flex !important;
+    margin-bottom: 1rem !important;
+    align-items: center;
+  }
+  .payment-container .payment-wrapper .adress .info-mobile .info-mobile-row p {
+    padding: 0 !important;
+    color: black !important;
+    font-weight: 600 !important;
+  }
+  .payment-container .payment-wrapper .adress .info-mobile .info-mobile-row span {
+    font-size: 1.1rem !important;
+    margin-left: 1rem !important;
+    padding: 0.2rem 0.4rem !important;
+  }
+  .payment-container .payment-wrapper .payment .options .item {
+    padding: 0.6rem 0 !important;
+  }
+  .payment-container .payment-wrapper .payment .options .form-payment-wrapper-img img {
+    width: 100% !important;
+  }
+}/*# sourceMappingURL=Payment.css.map */

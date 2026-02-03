@@ -1,0 +1,169 @@
+@charset "UTF-8";
+.register-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
+  background: linear-gradient(to right, #ffd6e8 35%, #ffe4f0 100%);
+  position: relative;
+  /* hình nền bên trái */
+  /* form bên phải */
+}
+.register-container .register-logo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.register-container .register-logo img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-left: 5rem;
+}
+.register-container .register-wrapper {
+  width: 60rem;
+  background-color: #fff;
+  border-radius: 2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  padding: 1rem 1rem 2rem;
+  margin-right: 10rem;
+  font-family: "Poppins", "Quicksand", sans-serif;
+  text-align: center;
+  position: relative;
+  z-index: 10;
+}
+.register-container .register-wrapper .register-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ff6ea9;
+  text-align: center;
+  margin-top: 10px;
+}
+.register-container .register-wrapper .register-form {
+  width: 100%;
+  position: relative;
+  text-align: left;
+  margin: 1.4rem 0;
+}
+.register-container .register-wrapper .register-form i {
+  position: absolute;
+  left: 5px;
+  top: 70%;
+  transform: translateY(-50%);
+  color: #ff6ea9;
+  font-size: 30px;
+  transition: color 0.2s ease;
+}
+.register-container .register-wrapper .register-form label {
+  display: block;
+  width: 100%;
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+  color: #444;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  margin-left: 10px;
+}
+.register-container .register-wrapper .register-form input {
+  width: 100%;
+  height: 4.4rem;
+  font-size: 1.5rem;
+  border: 1.5px solid #f3c4d4;
+  border-radius: 0.8rem;
+  padding-left: 45px;
+  color: #333;
+  outline: none;
+  transition: all 0.25s ease;
+  margin-bottom: -10px;
+}
+.register-container .register-wrapper .register-form input::-moz-placeholder {
+  color: #777a85;
+}
+.register-container .register-wrapper .register-form input::placeholder {
+  color: #777a85;
+}
+.register-container .register-wrapper .register-form input:focus {
+  border-color: #ff6ea9;
+  box-shadow: 0 0 6px rgba(255, 110, 169, 0.3);
+}
+.register-container .register-wrapper .register-form input:focus + i {
+  color: #ff4f93;
+}
+.register-container .register-wrapper .register-form span {
+  padding-top: 0.3rem;
+  display: block;
+  font-size: 1.3rem;
+  color: red;
+}
+.register-container .register-wrapper .btn {
+  width: 100%;
+  height: 4.6rem;
+  border: none;
+  border-radius: 1.2rem;
+  background-color: #ff6ea9;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 1.2rem;
+}
+.register-container .register-wrapper .btn:hover {
+  background-color: #ff5c9a;
+}
+.register-container .register-wrapper .register-register {
+  text-align: center;
+  padding-top: 1.5rem;
+  font-size: 1.4rem;
+  color: #444;
+}
+.register-container .register-wrapper .register-register .register-register-link {
+  color: #ff6ea9;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  padding-left: 0.4rem;
+}
+.register-container .register-wrapper .register-register .register-register-link:hover {
+  text-decoration: underline;
+}
+
+/* responsive */
+@media screen and (max-width: 1024px) {
+  .register-container {
+    flex-direction: column;
+    background: linear-gradient(to bottom, #fcd9df, #cfe0f8);
+  }
+  .register-container .register-logo {
+    width: 100%;
+  }
+  .register-container .register-logo img {
+    width: 70%;
+    margin: 2rem auto;
+  }
+  .register-container .register-wrapper {
+    width: 80%;
+    margin: 2rem auto;
+    position: relative;
+  }
+}
+@media screen and (max-width: 600px) {
+  .register-container .register-wrapper {
+    width: 90%;
+    padding: 2rem;
+  }
+  .register-container .register-wrapper .register-title {
+    font-size: 2.6rem;
+  }
+  .register-container .register-wrapper .register-form label {
+    font-size: 1.4rem !important;
+  }
+  .register-container .register-wrapper .register-form input {
+    font-size: 1.3rem !important;
+  }
+}/*# sourceMappingURL=register.css.map */

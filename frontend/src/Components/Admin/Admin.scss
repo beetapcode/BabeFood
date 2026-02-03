@@ -1,0 +1,107 @@
+.admin-container {
+    width: 100%;
+    height: 100%;
+
+    .admin-container-navbar {
+        position: fixed;
+        left: 0;
+        width: 29rem;
+        height: 100%;
+        background: #111827; /* sidebar background */
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+
+        /* ITEM CHUNG */
+        .admin-container-item {
+            width: 100%;
+            font-size: 1.6rem;
+            color: #ffffff;
+            display: flex;
+            align-items: center;
+            padding: 1rem 0.5rem;
+            border-radius: 0.8rem;
+            transition: all 0.2s ease;
+            font-weight: 500;
+
+            /* ICON HEROICONS */
+            svg,
+            .admin-menu-icon {
+                width: 2rem;
+                height: 2rem;
+                color: #ffffff;
+                margin-right: 1.2rem;
+                flex-shrink: 0;
+                transition: color 0.2s ease;
+            }
+
+            img {
+                margin-right: 1rem;
+                width: 4rem;
+                height: 4rem;
+                border-radius: 50%;
+            }
+
+            p {
+                
+                font-size: 1.6rem;
+                font-weight: 600;
+                white-space: nowrap;
+            }
+        }
+
+        /* DÒNG USER */
+        .admin-container-item:nth-child(1) {
+            
+            padding-bottom: 1.6rem;
+            border-bottom: 0.1rem solid rgba(255, 255, 255, 0.2);
+
+            /* Không có hover, không translate */
+            &:hover {
+                opacity: 1;
+                cursor: default;
+                transform: none;
+            }
+
+            /* ẨN ICON (nếu có) */
+            svg,
+            .admin-menu-icon {
+                display: none;
+            }
+        }
+
+        /* HOVER MENU */
+        .admin-container-item:hover {
+            opacity: 0.9;
+            cursor: pointer;
+            transform: translateX(4px);
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        /* ACTIVE MENU */
+        .admin-container-item.active {
+            background: #ec4899; /* Hồng đậm */
+            color: #ffffff;
+            box-shadow: 0 6px 18px rgba(236, 72, 153, 0.25);
+            transform: none;
+        }
+
+        .admin-container-item.active svg,
+        .admin-container-item.active .admin-menu-icon {
+            color: #ffffff;
+        }
+
+        .admin-container-item.active img {
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+        }
+    }
+
+    /* CONTENT */
+    .admin-main {
+        margin-left: 26rem;
+        padding: 2rem;
+        min-height: 100vh;
+        background: #f9fafb;
+    }
+}
